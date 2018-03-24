@@ -1,6 +1,4 @@
 <?php
-print('hi');
-exit();
 require_once('email_config.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -23,9 +21,9 @@ $options = array(
     )
 );
 $mail->smtpConnect($options);
-$mail->From = 'example@gmail.com';  // sender's email address (shows in "From" field)
-$mail->FromName = 'Example Name';   // sender's name (shows in "From" field)
-$mail->addAddress('recipient1@example.com', 'First Recipient');  // Add a recipient
+$mail->From = $_POST['email'];  // sender's email address (shows in "From" field)
+$mail->FromName = $_POST['contactName'];   // sender's name (shows in "From" field)
+$mail->addAddress(EMAIL_USER);  // Add a recipient
 //$mail->addAddress('ellen@example.com');                        // Name is optional
 $mail->addReplyTo('example@gmail.com');                          // Add a reply-to address
 //$mail->addCC('cc@example.com');
@@ -36,7 +34,7 @@ $mail->addReplyTo('example@gmail.com');                          // Add a reply-
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+$mail->Body    = $_POST['comments'];
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 if(!$mail->send()) {

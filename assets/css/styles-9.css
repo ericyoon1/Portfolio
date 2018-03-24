@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .bg-color2{
     color:#fff;
-    background:#F28C83;
+    background:lightblue;
 }
 
 .bg-color3{
@@ -76,11 +76,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .border-bottom-color2{
-    border-bottom:7px solid #F28C83;
+    border-bottom:7px solid lightblue;
 }
 
 .border-top-color2{
-    border-top:7px solid #F28C83;
+    border-top:7px solid lightblue;
 }
 
 .color1 .service-icon,
@@ -120,7 +120,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color:#fff;
     font-size: 21px;
     font-weight: 300;
-    background:#F28C83;
+    background:lightskyblue;
     outline: none !important;
     border-radius: 0;
     transition: opacity .2s ease-out;
@@ -276,7 +276,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #main-nav.scrolled .nav li.active a,
 #main-nav.scrolled .nav a:hover{
-    color: #F28C83;
+    color: lightblue;
 }
 
 /*-----------------------
