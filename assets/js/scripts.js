@@ -12,6 +12,31 @@ $(document).ready(function() {
 	})	
 	
 	/*============================================
+	Applications Live/Code Links
+	==============================================*/
+
+	$('.stubbiesLiveLink').on('click', stubbiesLiveLink);
+	$('.stubbiesCodeLink').on('click', stubbiesCodeLink);
+	$('.calculatorLiveLink').on('click', calculatorLiveLink);
+	$('.calculatorCodeLink').on('click', calculatorCodeLink);
+
+	function stubbiesLiveLink(){
+		window.open('http://stubbies.kryseno.com/');
+	}
+
+	function stubbiesCodeLink(){
+		window.open('https://github.com/kryseno/stubbies');
+	}
+
+	function calculatorLiveLink(){
+		window.open('http://eyoon.life/calculator/');
+	}
+
+	function calculatorCodeLink(){
+		window.open('https://github.com/ericyoon1/calculator');
+	}
+
+	/*============================================
 	Header
 	==============================================*/
 	
